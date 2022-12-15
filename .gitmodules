@@ -1,0 +1,3 @@
+[submodule "jupyter_helpers"]
+	path = jupyter_helpers
+	url = git@github.com:Jchang4/jupyter_helpers.git
