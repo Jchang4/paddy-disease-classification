@@ -99,8 +99,10 @@ def train_learner(dls: DataLoaders, model: nn.Module, splitter=noop,
         print('LR Valley:', lr_valley)
         print('LR Slide:', lr_slide)
         plt.show()
+        # lr = lr_steep if lr_steep <= lr_min else lr_slide if lr_slide <= lr_min else lr_valley
+        lr = lr_steep
     
-    lr = float(input('Type a learning_rate'))
+    # lr = float(input('Type a learning_rate'))
     print(f"lr: {lr}")
     
     if not learn.splitter or learn.splitter is noop:
